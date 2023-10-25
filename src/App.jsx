@@ -21,10 +21,12 @@ function App() {
       headers:{
         'content-type': 'application/json'
       },
-      body: JSON.stringify(user)
+      body:
     })
     .then(res => res.json())
-    .then(data => console.log('inside post response', data))
+    .then(data =>{
+      console.log(data)
+    })
   }
 
   return (
