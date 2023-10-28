@@ -21,7 +21,7 @@ function App() {
       headers:{
         'content-type': 'application/json'
       },
-      body:
+      body: JSON.stringify(user)
     })
     .then(res => res.json())
     .then(data =>{
